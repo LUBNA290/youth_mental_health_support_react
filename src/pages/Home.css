@@ -92,3 +92,24 @@
     margin-top: 10px;
     color: #555;
 }
+.get-started-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.get-started-button:hover {
+    background-color: #45a049;
+}
+
+.get-started-button:active {
+    background-color: #3e8e41;
+}

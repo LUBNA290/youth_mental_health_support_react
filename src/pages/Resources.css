@@ -1,0 +1,39 @@
+.resources-container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+  }
+  
+  .resource-card {
+    flex: 1 1 calc(50% - 20px); /* 50% width minus the gap */
+    box-sizing: border-box;
+  }
+  
+  .resource-title {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .resource-description {
+    color: #555;
+  }
+  
+  .resource-link {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .resource-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .resource-card {
+      flex: 1 1 100%; /* Full width on smaller screens */
+    }
+  }
+  

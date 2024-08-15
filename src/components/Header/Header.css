@@ -14,3 +14,15 @@
   .nav-link:hover {
     text-decoration: underline;
   }
+  .logout-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  
+  .logout-button:hover {
+    text-decoration: none;
+  }

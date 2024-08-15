@@ -6,6 +6,10 @@ import Home from './pages/Home';
 import Resources from './pages/Resources';
 import Contact from './pages/Contact';
 import './styles/App.css';
+import LoginPage from './pages/Login';
+import SignupPage from './pages/SignUp';
+import Dashboard from './pages/Dashboard';
+import BookAppointment from './pages/BookAppointment';
 
 const App = () => (
   <Router>
@@ -13,8 +17,13 @@ const App = () => (
     <main className="main-content">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/book-appointment" element={<BookAppointment />} />
+        
       </Routes>
     </main>
     <Footer />

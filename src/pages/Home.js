@@ -1,14 +1,26 @@
-// src/pages/Home.js
 import React from 'react';
 import './Home.css';
-const Hero = () => (
-    <section className="hero">
-        <div className="hero-content">
-            <h1>Welcome to Youth Mental Health Support</h1>
-            <p>Your journey to mental wellness starts here.</p>
-        </div>
-    </section>
-);
+import { useNavigate } from 'react-router-dom';
+
+const Hero = () => {
+    const navigate = useNavigate();
+
+    const handleGetStartedClick = () => {
+        navigate('/login');
+    };
+
+    return (
+        <section className="hero">
+            <div className="hero-content">
+                <h1>Welcome to Youth Mental Health Support</h1>
+                <p>Your journey to mental wellness starts here.</p>
+                <button className="get-started-button" onClick={handleGetStartedClick}>
+                    Get Started
+                </button>
+            </div>
+        </section>
+    );
+};
 
 const ServiceCard = ({ title, description }) => (
     <div className="service-card">
