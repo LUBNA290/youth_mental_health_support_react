@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Login.css';
-import Image from './7749157.jpg'; // Import your image
+import Image from './7749157.jpg';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -28,14 +28,21 @@ const LoginPage = () => {
 
     try {
       const response = await axios.request(config);
-      const { token, role, user_id } = response.data;
+      const { role, user_id } = response.data.results[0];
+      const { token } = response.data;
+      console.log(response.data);
 
-      // Store the token and role in localStorage
       localStorage.setItem('token', token);
       localStorage.setItem('role', role);
       localStorage.setItem('user_id', user_id);
 
-      window.location.href = '/dashboard';
+
+      if (role === 'therapist') {
+        window.location.href = '/therapist-dashboard';
+      } else {
+        window.location.href = '/dashboard';
+      }
+
       console.log('Login successful:', response.data);
     } catch (error) {
       console.error('Login error:', error);

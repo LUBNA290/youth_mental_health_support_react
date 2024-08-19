@@ -10,6 +10,8 @@ import LoginPage from './pages/Login';
 import SignupPage from './pages/SignUp';
 import Dashboard from './pages/Dashboard';
 import BookAppointment from './pages/BookAppointment';
+import TherapistDashboard from './pages/TherapistDashboard';
+import UserBookings from './pages/UserBookings';
 
 const App = () => (
   <Router>
@@ -23,6 +25,8 @@ const App = () => (
         <Route path="/contact" element={<Contact />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/book-appointment" element={<BookAppointment />} />
+        <Route path="/therapist-dashboard" element={<TherapistDashboard />} />
+        <Route path="/bookings" element={<UserBookings />} />
         
       </Routes>
     </main>

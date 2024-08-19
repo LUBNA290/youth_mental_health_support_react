@@ -1,0 +1,95 @@
+.therapist-dashboard {
+    padding: 20px;
+  }
+  
+  .bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .bookings-table th,
+  .bookings-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .bookings-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .action-button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .status-button {
+    background-color: #007bff;
+  }
+  
+  .color-button {
+    background-color: #28a745;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 20px;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-content h3 {
+    margin-top: 0;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .modal-content select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .modal-content button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .modal-content .action-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .modal-content .cancel-button {
+    background-color: #6c757d;
+    color: white;
+  }
+  
