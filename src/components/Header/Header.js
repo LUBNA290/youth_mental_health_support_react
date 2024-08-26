@@ -24,11 +24,16 @@ const Header = () => {
             <>
             <Link to="/dashboard" className="nav-link">Dashboard</Link>
             <Link to="/bookings" className="nav-link">Bookings</Link>
+            <Link to="/motivational-stories" className="nav-link">Stories</Link>
             </>
           ) : (
+            <>
             <Link to="/therapist-dashboard" className="nav-link">Therapist Dashboard</Link>
+            <Link to="/motivational-stories" className="nav-link">Stories</Link>
+            </>
           )
         )}
+        
 
         <Link to="/resources" className="nav-link">Resources</Link>
         <Link to="/contact" className="nav-link">Contact</Link>

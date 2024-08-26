@@ -6,14 +6,14 @@ import './UserBookings.css';
 const UserBookings = () => {
   const [bookings, setBookings] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
-  const [userId, setUserId] = useState(null);
+  // const [userId, setUserId] = useState(null);
 
   const navigate = useNavigate();
 
   useEffect(() => {
     const storedUserId = localStorage.getItem('user_id');
     if (storedUserId) {
-      setUserId(storedUserId);
+      // setUserId(storedUserId);
       fetchBookings(storedUserId);
     } else {
       setErrorMessage('User ID not found. Please log in again.');

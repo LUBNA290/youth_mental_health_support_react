@@ -12,6 +12,7 @@ import Dashboard from './pages/Dashboard';
 import BookAppointment from './pages/BookAppointment';
 import TherapistDashboard from './pages/TherapistDashboard';
 import UserBookings from './pages/UserBookings';
+import MotivationStories from './pages/MotivationalStories';
 
 const App = () => (
   <Router>
@@ -27,6 +28,7 @@ const App = () => (
         <Route path="/book-appointment" element={<BookAppointment />} />
         <Route path="/therapist-dashboard" element={<TherapistDashboard />} />
         <Route path="/bookings" element={<UserBookings />} />
+        <Route path="/motivational-stories" element={<MotivationStories />} />
         
       </Routes>
     </main>
